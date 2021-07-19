@@ -19,13 +19,17 @@ version := "1.0"
 
 // Note, it's not required for you to define these three settings. These are
 // mostly only necessary if you intend to publish your library's binaries on a
-// place like Sonatype.
+// place like Sonatype or Bintray.
 
 
 // Want to use a published library in your project?
 // You can define other libraries as dependencies in your build like this:
 
 libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2"
+libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.2.1"
+/// libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.31"
+/// libraryDependencies += "org.slf4j" % "slf4j-nop" % "1.7.31" % Test
+libraryDependencies += "org.slf4j" % "slf4j-nop" % "2.0.0-alpha2" % Test
 
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
 // we're adding the scala-parser-combinators dependency to the set of dependencies
